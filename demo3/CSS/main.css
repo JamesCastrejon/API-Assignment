@@ -1,0 +1,117 @@
+/* DEFAULT*/
+body { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    background-color: rgb(252, 184, 176);
+    font-family: arial,verdana,sans-serif;
+    font-size:12px;
+}
+
+#body {
+    background-image: url("MarioBackground.png");
+}
+
+/* HEADER */
+#nav {
+    background:rgb(253, 86, 86);
+    color: white;
+    padding:5px;
+    font-size:17px;
+ }
+
+ /* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 90%;
+    background-color: rgb(253, 86, 86);; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    color: white;
+}
+
+.sidenav h1 {
+    padding: 6px 8px 6px 16px;
+}
+
+.sidenav p {
+    font-size: 20px;
+    padding: 3px 8px 3px 16px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 4px 8px 4px 16px;
+    font-size: 16px;
+    display: block;
+}
+
+#categories {
+    font-size:20px;
+}
+
+ /* LINK */
+ a {
+    color: inherit; /* blue colors for links too */
+    margin: 1px;
+    padding: 5px;
+    text-decoration: inherit; /* no underline */
+}
+
+/* BODY */
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    /*whatever width you want*/
+}
+
+/* TABLE */
+table.gridtable {
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;
+}
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;
+}
+
+/* FOOTER */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    background:rgb(253, 86, 86);
+    color: white;
+    text-align: center;
+}
