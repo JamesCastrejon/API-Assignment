@@ -14,7 +14,16 @@
             <div class="middle">
                 <div class="inner">
                     <h2>List of Items</h2>
-                    <!-- TODO: sjngksngisngskfk -->
+                    <script>
+                        var xmlhttp = new XMLHttpRequest();
+                        xmlhttp.onreadystatechange = function() {
+                            if (this.readyState == 4 && this.status == 200) {
+                                alert(this.responseText);
+                            }
+                        };
+                        xmlhttp.open("GET", "10.10.16.189/api/foo.php", true);
+                        xmlhttp.send();
+                    </script>
                 </div>
             </div>
         </div>
