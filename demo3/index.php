@@ -22,17 +22,17 @@
                         var b = url.searchParams.get("cost");
                         var c = url.searchParams.get("category");
                         var params = "";
-                        if (a != "") {
+                        if (a != null) {
                             params = "?name="+a;
-                                alert(a);
+                            alert(a);
                         }
-                        if (b != "") {
+                        if (b != null) {
                             params = "?cost="+b;
-                                alert(b);
+                            alert(b);
                         }
-                        if (c != "") {
+                        if (c != null) {
                             params = "?category="+c;
-                                alert(c);
+                            alert(c);
                         }
                         var xmlhttp = new XMLHttpRequest();
                         xmlhttp.onreadystatechange = function() {
