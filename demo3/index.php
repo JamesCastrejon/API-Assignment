@@ -24,15 +24,12 @@
                         var params = "";
                         if (a != null) {
                             params = "?name="+a;
-                            alert(a);
                         }
                         if (b != null) {
                             params = "?price="+b;
-                            alert(b);
                         }
                         if (c != null) {
                             params = "?category="+c;
-                            alert(c);
                         }
                         var xmlhttp = new XMLHttpRequest();
                         xmlhttp.onreadystatechange = function() {
