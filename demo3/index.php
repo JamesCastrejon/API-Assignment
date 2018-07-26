@@ -14,14 +14,36 @@
             <div class="middle">
                 <div class="inner">
                     <h2>List of Items</h2>
+			<p id="txt"></p>		
                     <script>
+			var url_string = window.location.href;
+			var url = new URL(url_string);
+			var a = url.searchParams.get("name");
+			var b = url.searchParams.get("cost");
+			var c = url.searchParams.get("category");
+			var params = "";
+			if (c != "") {
+				params = "?category="+c;
+			}
+			else if (b != "") {
+				params = "?cost="+b;
+			}
+			else if (a != "") {
+				params = "?name="+a;
+			}
                         var xmlhttp = new XMLHttpRequest();
                         xmlhttp.onreadystatechange = function() {
                             if (this.readyState == 4 && this.status == 200) {
-                                alert(this.responseText);
+				document.getElementById("txt").innerHTML = this.responseText;
+                                //alert(this.responseText);
                             }
                         };
-                        xmlhttp.open("GET", "10.10.16.189/api/foo.php", true);
+			if (params != "") {
+                        	xmlhttp.open("GET", "http://10.10.16.189/demo2/index.php"+params, true);
+			}
+			else {
+				xmlhttp.open("GET", "http://10.10.16.189/demo2/index.php", true);
+			}
                         xmlhttp.send();
                     </script>
                 </div>
