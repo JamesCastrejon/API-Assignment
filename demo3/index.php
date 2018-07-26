@@ -26,11 +26,11 @@
                             params = "?name="+a;
                                 alert(a);
                         }
-                        else if (b != "") {
+                        if (b != "") {
                             params = "?cost="+b;
                                 alert(b);
                         }
-                        else if (c != "") {
+                        if (c != "") {
                             params = "?category="+c;
                                 alert(c);
                         }
