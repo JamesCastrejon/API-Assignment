@@ -19,7 +19,7 @@
                         var url_string = window.location.href;
                         var url = new URL(url_string);
                         var a = url.searchParams.get("name");
-                        var b = url.searchParams.get("cost");
+                        var b = url.searchParams.get("price");
                         var c = url.searchParams.get("category");
                         var params = "";
                         if (a != null) {
@@ -27,7 +27,7 @@
                             alert(a);
                         }
                         if (b != null) {
-                            params = "?cost="+b;
+                            params = "?price="+b;
                             alert(b);
                         }
                         if (c != null) {
